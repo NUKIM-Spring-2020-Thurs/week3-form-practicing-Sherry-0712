@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>0319回家作業</title>
+	<style>
+		form{
+			text-align:center;
+			font-family: Microsoft JhengHei;
+			line-height: 2.5em;
+			background-color: #F0F0F0;
+			font-size: 16px;
+		}
+		form> input , form> select{
+			padding: 3px 5px;
+			border: 1px solid #000000;
+			border-radius: 5px;
+		}
+		form>p{
+			font-size: 30px;
+			padding-top:20px;
+		}
+	</style>
+</head>
+<body>
+	<form action="submit.php" method="POST">
+		<p><b>高大資管營報名表單</b></p>
+		姓名：<input type="text" name="sname" required></br>
+		FB帳號：<input type="text" name="FB" placeholder="讓我們方便聯繫你/妳~"></br>
+		性別：
+		<input type="radio" name="gender" value="M" required>男
+		<input type="radio" name="gender" value="F" required>女</br>
+		身分證字號：<input type="password" name="ID" placeholder="僅用於投保保險" required></br>
+		生日：<input type="date" name="birthday" required></br>
+		居住地：
+		<select name="live">
+			<option value="Northern">北部</option>
+			<option value="Central">中部</option>
+			<option value="Southern">南部</option>
+			<option value="East">東部</option>
+		</select></br>
+		地址：<input type="text" name="ID_live" placeholder="請填戶籍地址" required></br>
+		連絡電話：<input type="text" name="phone" placeholder="09xx-xxx-xxx" required></br>
+		E-mail：<input type="email" name="email" required></br>
+		就讀/畢業高中：<input type="text" name="high_sch" placeholder="請填全名 例:國立內壢高中" required></br>
+		緊急聯絡人姓名：<input type="text" name="pname" required></br>
+		緊急聯絡人電話：<input type="text" name="pphone" placeholder="09xx-xxx-xxx" required></br>
+		繳費帳戶之末五碼：<input type="text" name="ac_num" placeholder="僅用於確認繳費者" required></br>
+		衣服尺寸：
+		<input type="radio" name="cloth" value="XS" required>XS
+		<input type="radio" name="cloth" value="S" required>S
+		<input type="radio" name="cloth" value="M" required>M
+		<input type="radio" name="cloth" value="L" required>L
+		<input type="radio" name="cloth" value="XL" required>XL</br>
+		飲食習慣：
+		<input type="radio" name="food" value="M" required>葷
+		<input type="radio" name="food" value="V" required>素，
+		其他：<input type="text" name="food_other" placeholder="忌食、過敏..."></br>
+		如何到高大：
+		<input type="radio" name="trans" value="parents" required>家長接送
+		<input type="radio" name="trans" value="HSR" required>高鐵
+		<input type="radio" name="trans" value="TR" required>台鐵
+		<input type="radio" name="trans" value="MRT" required>捷運
+		<input type="radio" name="trans" value="bus" required>公車</br>
+		大約抵達時間：<input type="time" name="atime"></br>
+		感興趣之項目：
+		<input type="checkbox" name="interest[]" value="university">大學入門
+		<input type="checkbox" name="interest[]" value="HTML">HTML
+		<input type="checkbox" name="interest[]" value="SCM">供應鏈管理
+		<input type="checkbox" name="interest[]" value="earth">大地
+		<input type="checkbox" name="interest[]" value="water">水大地
+		<input type="checkbox" name="interest[]" value="RPG">RPG
+		<input type="checkbox" name="interest[]" value="dance">舞會
+		<input type="checkbox" name="interest[]" value="escape_room">密室</br>
+		備註：</br>
+		<textarea name="commet" cols="30" rows="7"></textarea></br>
+
+		<input type="reset">&nbsp; &nbsp;<input type="submit">
+	</form>
+</body>
+</html>
